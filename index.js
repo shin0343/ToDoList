@@ -1,19 +1,5 @@
-/* String
-const what = "JB";
-console.log(what);
-*/
+const something = "Something";
 
-/* Bool
-const what = true;
-console.log(what);
-*/
+const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", true, something];
 
-/* Number
-const what = 666;
-console.log(what);
-*/
-
-/* Float
-const what = 55.1;
-console.log(what);
-*/
+console.log(daysOfWeek);
