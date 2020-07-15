@@ -9,7 +9,7 @@ function handleClick() {
     } else {
         title.classList.add(CLICKED_CLASS);
     }*/
-    title.classList.toggle(CLICKED_CLASS); // This way is worked same as above code
+    title.classList.toggle(CLICKED_CLASS); // This way is worked as same as above code
 }
 
 function init() {
