@@ -3,10 +3,10 @@
 commitContents=$1
 
 git add *
-echo "Git Add is completed!!"
+echo -e "\033[43;31m\Git Add is completed!!033[0m"
 
 git commit -m "${commitContents}"
-echo "Git Commit is completed!! = ${commitContents}"
+echo -e "\033[43;31m\Engineer033[0m"
 
 git push origin master
-echo "Git Push is completed!!"
+echo -e "\033[43;31m\Engineer033[0m"
