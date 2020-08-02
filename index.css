@@ -23,7 +23,7 @@ body {
     border: 1px solid black;
     border-radius: 1em;
     color: rgb(95, 227, 196);
-    position: relative;
+    position: absolute;
     top: 0px;
     left: 10px;
 }
@@ -37,8 +37,8 @@ body {
     border: 1px solid black;
     border-radius: 1em;
     color: rgb(95, 227, 196);
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 90px;
     left: 10px;
 }
 
