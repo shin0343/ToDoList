@@ -17,38 +17,36 @@ body {
 .greetings {
     /* Just to center the form on the page */
     margin: 0 auto;
-    width: 200px;
+    width: 180px;
     /* To see the outline of the form */
     padding: 1em;
     border: 1px solid black;
     border-radius: 1em;
     color: rgb(95, 227, 196);
-    position: absolute;
-    top: 0px;
-    right: 55px;
 }
 
 .form {
     /* Just to center the form on the page */
     margin: 0 auto;
-    width: 200px;
+    width: 180px;
     /* To see the outline of the form */
     padding: 1em;
     border: 1px solid black;
     border-radius: 1em;
     color: rgb(95, 227, 196);
-    position: absolute;
-    top: 70px;
+    top: 0px;
     right: 55px;
 }
 
 .todolist {
     /* Just to center the form on the page */
     margin: 0 auto;
-    width: 200px;
+    width: 180px;
     /* To see the outline of the form */
     padding: 1em;
-    color: rgb(95, 227, 196);
+    color: rgb(248, 0, 215);
+    top: 20px;
+    right: 55px;
 }
 
 .clock {
