@@ -16,52 +16,57 @@ body {
 
 .greetings {
     /* Just to center the form on the page */
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width: 180px;
     /* To see the outline of the form */
     padding: 1em;
     border: 1px solid black;
     border-radius: 1em;
     color: rgb(95, 227, 196);
+    position: relative;
+    top: 0px;
+    left: 10px;
 }
 
 .form {
     /* Just to center the form on the page */
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width: 180px;
     /* To see the outline of the form */
     padding: 1em;
     border: 1px solid black;
     border-radius: 1em;
     color: rgb(95, 227, 196);
+    position: relative;
     top: 0px;
-    right: 55px;
+    left: 10px;
 }
 
 .todolist {
     /* Just to center the form on the page */
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width: 180px;
     /* To see the outline of the form */
     padding: 1em;
     color: rgb(248, 0, 215);
-    top: 20px;
-    right: 55px;
+    position: absolute;
+    top: 200px;
+    left: 30px;
 }
 
 .clock {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     position: absolute;
     top: 0px;
-    left: 55px;
+    right: 95px;
     color: rgb(92, 250, 169);
 }
 
 .weather {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     position: absolute;
-    top: 70px;
-    left: 20px;
+    top: 50px;
+    right: 50px;
     color: rgb(92, 250, 169);
 }
 
