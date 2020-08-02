@@ -16,8 +16,8 @@ function getWeather(lat, lng) {
             ===============
             <<Today Weather>>
             ===============
-            <Temperature> ${temperature}℃ 
-            <Humid> ${humid}% 
+            <Temperature> ${temperature} ℃ 
+            <Humid> ${humid} % 
             <City> ${place}`;
         });
 }
