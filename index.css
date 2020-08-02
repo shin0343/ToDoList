@@ -14,7 +14,6 @@ body {
     color: #7f8c8d;
 }
 
-.todolist,
 .form,
 .greetings {
     /* Just to center the form on the page */
@@ -24,6 +23,14 @@ body {
     padding: 1em;
     border: 1px solid black;
     border-radius: 1em;
+}
+
+.todolist {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
 }
 
 .clock {
