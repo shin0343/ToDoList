@@ -7,16 +7,37 @@ body {
 }
 
 body {
-    color: #c23616
+    color: wheat
 }
 
 .clicked {
     color: #7f8c8d;
 }
 
+.todolist,
 .form,
 .greetings {
-    display: none;
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+.clock {
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.weather {
+    margin: 0 auto;
+    position: absolute;
+    top: 70px;
+    left: 20px;
 }
 
 .showing {

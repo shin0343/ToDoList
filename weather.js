@@ -8,9 +8,17 @@ function getWeather(lat, lng) {
             return response.json();
         })
         .then(function(json) { // keyword 'then' waits 'fetch'
+            //const weatherIcon = json.main.weather[0].icon;
             const temperature = json.main.temp;
+            const humid = json.main.humidity;
             const place = json.name;
-            weather.innerText = `${temperature} @ ${place}`;
+            weather.innerText = `
+            ===============
+            <<Today Weather>>
+            ===============
+            <Temperature> ${temperature}℃ 
+            <Humid> ${humid}% 
+            <City> ${place}`;
         });
 }
 
