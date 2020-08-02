@@ -14,30 +14,49 @@ body {
     color: #7f8c8d;
 }
 
-.form,
 .greetings {
     /* Just to center the form on the page */
     margin: 0 auto;
-    width: 400px;
+    width: 200px;
     /* To see the outline of the form */
     padding: 1em;
     border: 1px solid black;
     border-radius: 1em;
+    color: rgb(95, 227, 196);
+    position: absolute;
+    top: 0px;
+    right: 55px;
+}
+
+.form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 200px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+    color: rgb(95, 227, 196);
+    position: absolute;
+    top: 70px;
+    right: 55px;
 }
 
 .todolist {
     /* Just to center the form on the page */
     margin: 0 auto;
-    width: 400px;
+    width: 200px;
     /* To see the outline of the form */
     padding: 1em;
+    color: rgb(95, 227, 196);
 }
 
 .clock {
     margin: 0 auto;
     position: absolute;
     top: 0px;
-    left: 20px;
+    left: 55px;
+    color: rgb(92, 250, 169);
 }
 
 .weather {
@@ -45,6 +64,7 @@ body {
     position: absolute;
     top: 70px;
     left: 20px;
+    color: rgb(92, 250, 169);
 }
 
 .showing {

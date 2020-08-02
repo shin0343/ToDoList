@@ -13,12 +13,13 @@ function getWeather(lat, lng) {
             const humid = json.main.humidity;
             const place = json.name;
             weather.innerText = `
-            ===============
-            <<Today Weather>>
-            ===============
-            <Temperature> ${temperature} ℃ 
-            <Humid> ${humid} % 
-            <City> ${place}`;
+            ┌───────────┐
+            │   <<Today Weather>>
+            │  ───────────
+            │   <Temperature> ${temperature} ℃ 
+            │   <Humid> ${humid} % 
+            │   <City> ${place}
+            └───────────┘`;
         });
 }
 
