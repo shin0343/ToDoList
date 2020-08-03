@@ -28,6 +28,7 @@ body {
     left: 10px;
 }
 
+.toDoform,
 .form {
     /* Just to center the form on the page */
     /*margin: 0 auto;*/
@@ -58,7 +59,7 @@ body {
     /*margin: 0 auto;*/
     position: absolute;
     top: 0px;
-    right: 95px;
+    right: 115px;
     color: rgb(92, 250, 169);
 }
 
@@ -91,4 +92,10 @@ body {
     height: 100%;
     z-index: -1;
     animation: fadeIn .5s linear;
+}
+
+.wi {
+    position: absolute;
+    top: 20px;
+    right: 60px;
 }
