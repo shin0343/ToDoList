@@ -1,7 +1,7 @@
 const weather = document.querySelector(".js-weather");
 const API_KEY = "d3cdd52b097ee26db148f8b3c29b10bc";
 const COORDS = "coords";
-let locationIcon = document.getElementsByClassName('.js-weather-icon');
+let locationIcon = document.getElementsByClassName('js-weather-icon');
 
 function getWeather(lat, lng) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`)
@@ -26,7 +26,7 @@ function getWeather(lat, lng) {
             │   <City> ${place}
             └───────────┘`;
 
-            locationIcon.innerHTML = `<img src="${iconUrl}"/>`;
+            locationIcon[0].innerHTML = `<img src="${iconUrl}"/>`;
             console.log(locationIcon);
         });
 }
