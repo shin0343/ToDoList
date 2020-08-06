@@ -16,15 +16,10 @@ function getWeather(lat, lng) {
             const temperature = json.main.temp;
             const humid = json.main.humidity;
             const place = json.name;
-            weather.innerText = `
-            ┌───────────┐
-            │   <<Today Weather>>
-            │  ───────────
-            │   <Current> ${mainWeather}
-            │   <Temperature> ${temperature}℃ 
-            │   <Humid> ${humid}% 
-            │   <City> ${place}
-            └───────────┘`;
+            weather.innerText = `<현재 날씨> ${mainWeather}
+            <온도> ${temperature}℃ 
+            <습도> ${humid}% 
+            <장소> ${place}`;
 
             locationIcon[0].innerHTML = `<img src="${iconUrl}"/>`;
             console.log(locationIcon);
