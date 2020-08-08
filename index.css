@@ -31,28 +31,29 @@ body {
 .toDoform,
 .form {
     /* Just to center the form on the page */
-    /*margin: 0 auto;*/
     width: 180px;
     /* To see the outline of the form */
     padding: 1em;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 1em;
     color: rgb(255, 255, 255);
-    position: absolute;
-    top: 90px;
-    left: 10px;
+    /*position: absolute;*/
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .todolist {
     /* Just to center the form on the page */
-    /*margin: 0 auto;*/
-    width: 180px;
+    width: 200px;
     /* To see the outline of the form */
-    padding: 1em;
+    padding: 2em;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1em;
     color: rgb(255, 255, 255);
-    position: absolute;
-    top: 150px;
-    left: 30px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .clock {
