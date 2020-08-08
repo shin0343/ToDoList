@@ -14,22 +14,7 @@ body {
     color: #7f8c8d;
 }
 
-.greetings {
-    /* Just to center the form on the page */
-    /*margin: 0 auto;*/
-    width: 180px;
-    /* To see the outline of the form */
-    padding: 1em;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 1em;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 0px;
-    left: 10px;
-}
-
-.toDoform,
-.form {
+.quote {
     /* Just to center the form on the page */
     width: 180px;
     /* To see the outline of the form */
@@ -43,14 +28,31 @@ body {
     margin-right: auto;
 }
 
-.todolist {
+.quote_header {
     /* Just to center the form on the page */
-    width: 200px;
-    /* To see the outline of the form */
-    padding: 2em;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 1em;
+    width: 180px;
     color: rgb(255, 255, 255);
+    /*position: absolute;*/
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote_text {
+    /* Just to center the form on the page */
+    width: 280px;
+    color: rgb(255, 255, 255);
+    /*position: absolute;*/
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote_author {
+    /* Just to center the form on the page */
+    width: 280px;
+    color: rgb(255, 255, 255);
+    /*position: absolute;*/
     display: table;
     margin-left: auto;
     margin-right: auto;
@@ -75,6 +77,59 @@ body {
     padding: 1em;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 1em;
+}
+
+.greetings {
+    /* Just to center the form on the page */
+    /*margin: 0 auto;*/
+    width: 180px;
+    /* To see the outline of the form */
+    padding: 0.5em;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+.nameform {
+    /* Just to center the form on the page */
+    width: 180px;
+    /* To see the outline of the form */
+    padding: 0.5em;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.toDoform {
+    /* Just to center the form on the page */
+    width: 180px;
+    /* To see the outline of the form */
+    padding: 0.5em;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 115px;
+    left: 10px;
+}
+
+.todolist {
+    /* Just to center the form on the page */
+    width: 200px;
+    /* To see the outline of the form */
+    padding: 1.5em;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 140px;
+    left: 10px;
 }
 
 .showing {
