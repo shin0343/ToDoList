@@ -62,7 +62,7 @@ body {
     /*margin: 0 auto;*/
     position: absolute;
     top: 0px;
-    right: 115px;
+    right: 80px;
     color: rgb(255, 255, 255);
 }
 
@@ -70,13 +70,19 @@ body {
     /*margin: 0 auto;*/
     position: absolute;
     top: 80px;
-    right: 50px;
+    right: 10px;
     color: rgb(255, 255, 255);
     width: 180px;
     /* To see the outline of the form */
     padding: 1em;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 1em;
+}
+
+.wi {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .greetings {
@@ -153,10 +159,4 @@ body {
     height: 100%;
     z-index: -1;
     animation: fadeIn .5s linear;
-}
-
-.wi {
-    position: absolute;
-    top: 20px;
-    right: 60px;
 }
