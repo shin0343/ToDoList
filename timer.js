@@ -3,9 +3,11 @@ const timer = document.querySelector(".js-timer");
 var count = 0;
 var time = 0;
 var choice = 0;
+var hour = 0;
+var min = 0;
+var sec = 0;
 
 function noodle() {
-
     clearInterval(time); // 타이머 우선 초기화 시켜주기(time initialize)
     /* 
      
@@ -26,11 +28,10 @@ function noodle() {
     // 찾은 index로 value찾기
     count = parseInt(document.frm.myChoice.options[choice].value);
 
-    alert(count);
+    alert(count + '초 타이머 시작');
 
     // 타이머 함수 1초씩 호출하는 함수 만들기
     time = setInterval("myTimer()", 1000);
-
 }
 
 function myTimer() {
@@ -52,4 +53,4 @@ function init() {
     myTimer();
 }
 
-myTimer();
+init();
