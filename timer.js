@@ -28,16 +28,28 @@ function noodle() {
     // 찾은 index로 value찾기
     count = parseInt(document.frm.myChoice.options[choice].value);
 
-    alert(count + '초 타이머 시작');
+    //alert(count + '초 타이머 시작');
 
     // 타이머 함수 1초씩 호출하는 함수 만들기
     time = setInterval("myTimer()", 1000);
 }
 
 function myTimer() {
+    var tempCount = count;
+    hour = tempCount / 3600;
+    hour = Math.floor(hour);
+    tempCount %= 3600;
+    min = tempCount / 60;
+    min = Math.floor(min);
+    tempCount %= 60;
+    sec = tempCount;
+    sec = Math.floor(sec);
+
+    document.getElementById("countdown").innerHTML = "완료까지 " + hour + "시간 " +
+        min + "분 " + sec + "초 남았습니다.";
+
     count = count - 1; // 타이머 선택 숫자에서 -1씩 감산함(갱신되기 때문)
 
-    document.getElementById("countdown").innerHTML = "완료까지 <b>" + count + "</b>초 남았습니다.";
     if (count == 0) {
         clearInterval(time); // 시간 초기화
         alert("시간이 완료되었습니다.")

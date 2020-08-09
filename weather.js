@@ -13,7 +13,7 @@ function getWeather(lat, lng) {
             const iconCode = json.weather[0].icon;
             const iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
             const mainWeather = json.weather[0].description;
-            const temperature = json.main.temp;
+            const temperature = Math.round(json.main.temp);
             const humid = json.main.humidity;
             const place = json.name;
             weather.innerText = `<날씨> ${mainWeather}
