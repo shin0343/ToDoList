@@ -72,7 +72,7 @@ body {
 .weather {
     /*margin: 0 auto;*/
     position: absolute;
-    top: 80px;
+    top: 120px;
     right: 10px;
     color: rgb(255, 255, 255);
     width: 180px;
@@ -84,7 +84,7 @@ body {
 
 .wi {
     position: absolute;
-    top: 20px;
+    top: 65px;
     right: 20px;
 }
 
