@@ -16,7 +16,17 @@ function deleteToDo(event) {
         return toDo.id !== parseInt(li.id);
     }); //toDos -> cleaned To-Do List
     toDos = cleanToDos;
-    saveToDos()
+    saveToDos();
+}
+
+function completeToDo(event) {
+    const btn = event.target;
+    const li = btn.parentNode;
+    const span = li.span;
+
+    span.style.cssText = 'text-decoration: line-through'
+
+    saveToDos();
 }
 
 function saveToDos() {
@@ -29,14 +39,18 @@ function saveToDos() {
 function paintToDo(text) {
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
+    const completeBtn = document.createElement("button");
     const span = document.createElement("span");
     const newId = toDos.length + 1;
 
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteToDo);
+    completeBtn.innerText = "O";
+    completeBtn.addEventListener("click", completeToDo);
     span.innerText = text;
-    li.appendChild(delBtn);
+    li.appendChild(completeBtn);
     li.appendChild(span);
+    li.appendChild(delBtn);
     li.id = newId;
     toDoList.appendChild(li);
 

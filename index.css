@@ -16,7 +16,7 @@ body {
 
 .timer {
     /* Just to center the form on the page */
-    width: 240px;
+    width: 280px;
     /* To see the outline of the form */
     padding: 0.5em;
     border: 1px solid rgb(255, 255, 255);
@@ -28,7 +28,7 @@ body {
     margin-right: auto;
     position: absolute;
     top: 156px;
-    left: 255px;
+    left: 285px;
 }
 
 .quote {
@@ -147,7 +147,7 @@ body {
 
 .todolist {
     /* Just to center the form on the page */
-    width: 200px;
+    width: 230px;
     /* To see the outline of the form */
     padding: 1.25em;
     border: 1px solid rgb(255, 255, 255);

@@ -11,7 +11,7 @@ function getQuote() {
             return response.json();
         })
         .then(function(data) {
-            console.log(data);
+            //console.log(data);
             const random = randomItem(data);
             const author = random.author;
             const text = random.text;
