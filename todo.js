@@ -22,9 +22,13 @@ function deleteToDo(event) {
 function completeToDo(event) {
     const btn = event.target;
     const li = btn.parentNode;
-    const span = li.span;
+    const span = li.children[1];
 
-    span.style.cssText = 'text-decoration: line-through'
+    if (span.style.cssText !== "text-decoration: line-through;") {
+        span.style.cssText = "text-decoration: line-through;";
+    } else if (span.style.cssText === "text-decoration: line-through;") {
+        span.style.cssText = "text-decoration:none;";
+    }
 
     saveToDos();
 }
@@ -45,7 +49,7 @@ function paintToDo(text) {
 
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteToDo);
-    completeBtn.innerText = "O";
+    completeBtn.innerText = "⭕";
     completeBtn.addEventListener("click", completeToDo);
     span.innerText = text;
     li.appendChild(completeBtn);
