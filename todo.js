@@ -30,6 +30,26 @@ function completeToDo(event) {
         span.style.cssText = "text-decoration:none;";
     }
 
+    /*const resultToDo = toDos.filter(function(toDo) {
+        console.log(toDo.id);
+        console.log(li.id);
+        //return toDo.id !== parseInt(li.id);
+        return true;
+    });
+    toDos = resultToDo;*/
+    /*for (var i = 0; i < toDos.length; i++) {
+        console.log(toDos[i]);
+    }*/
+    for (var i = 0; i < toDos.length; i++) {
+        if (toDos[i].id == li.id) {
+            console.log("|      ");
+            console.log(toDos[i].cssText);
+            console.log(span.style.cssText);
+            console.log("      |");
+            toDos[i].cssText = span.style.cssText;
+        }
+    }
+
     saveToDos();
 }
 
@@ -46,6 +66,7 @@ function paintToDo(text) {
     const completeBtn = document.createElement("button");
     const span = document.createElement("span");
     const newId = toDos.length + 1;
+    const cssText = "text-decoration:none;";
 
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteToDo);
@@ -60,7 +81,8 @@ function paintToDo(text) {
 
     const toDoObj = {
         text: text,
-        id: newId
+        id: newId,
+        cssText: cssText
     };
     toDos.push(toDoObj);
     saveToDos();
