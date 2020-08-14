@@ -42,10 +42,7 @@ function completeToDo(event) {
     }*/
     for (var i = 0; i < toDos.length; i++) {
         if (toDos[i].id == li.id) {
-            console.log("|      ");
-            console.log(toDos[i].cssText);
-            console.log(span.style.cssText);
-            console.log("      |");
+            console.log(toDos[i].cssText + " <- " + span.style.cssText);
             toDos[i].cssText = span.style.cssText;
         }
     }
