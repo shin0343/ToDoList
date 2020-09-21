@@ -12,6 +12,15 @@
 
 
 
+> Features
+>
+> 1. Setting User Name
+> 2. Adding/Deleting/Completing  to-do list
+> 3. Timer
+> 4. Location-based weather infomation 
+> 5. Random background image
+> 6. random quotes
+
 ---
 
 [ToDoList](https://shin0343.github.io/ToDoList/)
